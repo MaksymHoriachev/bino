@@ -107,6 +107,8 @@ add_action( 'widgets_init', 'bino_widgets_init' );
 function bino_scripts() {
 	wp_enqueue_style( 'bino-style', get_stylesheet_uri() );
 
+    wp_enqueue_style( 'bino--main', get_template_directory_uri() . '/css/main.css' );
+
 	wp_enqueue_script( 'bino-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'bino-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
